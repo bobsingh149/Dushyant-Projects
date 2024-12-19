@@ -30,16 +30,6 @@ function App() {
           
           <div className="links-container">
             <LinkCard 
-              title="Frontend Repository"
-              url="https://github.com/ArtFoliers/barter-frontend"
-              icon={faGithub}
-            />
-            <LinkCard 
-              title="Backend Repository"
-              url="https://github.com/ArtFoliers/Barter-backend"
-              icon={faGithub}
-            />
-            <LinkCard 
               title="Website"
               url="https://www.cliffhanger.in"
               icon={faGlobe}
@@ -48,6 +38,16 @@ function App() {
               title="Android App"
               url="https://drive.google.com/file/d/1Sq32kk-FeASRwzpmBtGiDAnj_x6KZPGL/view?usp=sharing"
               icon={faGooglePlay}
+            />
+            <LinkCard 
+              title="Frontend Repository"
+              url="https://github.com/ArtFoliers/barter-frontend"
+              icon={faGithub}
+            />
+            <LinkCard 
+              title="Backend Repository"
+              url="https://github.com/ArtFoliers/Barter-backend"
+              icon={faGithub}
             />
           </div>
         </div>
