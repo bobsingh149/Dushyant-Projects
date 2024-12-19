@@ -27,6 +27,7 @@ function App() {
         <div className="content">
           <h1 className="title">Cliffhanger</h1>
           <p className="subtitle">Book Social Media</p>
+          <p className="author">by Dushyant Singh</p>
           
           <div className="links-container">
             <LinkCard 
