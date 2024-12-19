@@ -1,5 +1,65 @@
+body {
+  background-color: #1C1C1E; /* Dark background color */
+  color: #D8D8D8; /* Dark theme text color */
+}
+
 .App {
   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  color: #9CAF88; /* Sage green primary color */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #2C2C2E; /* Dark surface color */
+  color: #D8D8D8; /* Dark theme text color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  padding: 15px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-title {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.card-icon {
+  font-size: 20px;
+}
+
+.card-arrow {
+  font-size: 14px;
 }
 
 .App-logo {
@@ -14,14 +74,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1C1C1E; /* Dark background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #D8D8D8; /* Dark theme text color */
 }
 
 .App-link {
