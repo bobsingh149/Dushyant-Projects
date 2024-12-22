@@ -1,15 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function PrivacyPolicy() {
+  const navigate = useNavigate();
+
   return (
     <div className="App">
       <header className="app-header">
+        <button 
+          onClick={() => navigate('/')}
+          className="back-button"
+        >
+          ← Back
+        </button>
         <h1>Privacy Policy</h1>
       </header>
       <div className="container">
         <div className="content privacy-content">
           <h1>Privacy Policy for Cliffhanger</h1>
-          <p>Last updated: [Current Date]</p>
+          <p>Last updated: March 26, 2024</p>
 
           <section>
             <h2>1. Information We Collect</h2>
@@ -58,7 +67,7 @@ function PrivacyPolicy() {
           <section>
             <h2>5. Contact Us</h2>
             <p>If you have questions about this Privacy Policy, please contact us at:</p>
-            <p>Email: [Your Contact Email]</p>
+            <p>Email: dushyant.singh.1492000@gmail.com</p>
           </section>
         </div>
       </div>
