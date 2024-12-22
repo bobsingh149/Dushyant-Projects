@@ -2,6 +2,8 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const launchUrl = (url) => {
@@ -19,41 +21,46 @@ function App() {
   );
 
   return (
-    <div className="App">
-      <header className="app-header">
-        <h1>Project Links</h1>
-      </header>
-      <div className="container">
-        <div className="content">
-          <h1 className="title">Cliffhanger</h1>
-          <p className="subtitle">Book Social Media</p>
-          <p className="author">by Dushyant Singh</p>
-          
-          <div className="links-container">
-            <LinkCard 
-              title="Website"
-              url="https://www.cliffhanger.in"
-              icon={faGlobe}
-            />
-            <LinkCard 
-              title="Android App"
-              url="https://drive.google.com/file/d/1Sq32kk-FeASRwzpmBtGiDAnj_x6KZPGL/view?usp=sharing"
-              icon={faGooglePlay}
-            />
-            <LinkCard 
-              title="Frontend Repository"
-              url="https://github.com/ArtFoliers/barter-frontend"
-              icon={faGithub}
-            />
-            <LinkCard 
-              title="Backend Repository"
-              url="https://github.com/ArtFoliers/Barter-backend"
-              icon={faGithub}
-            />
+    <Router>
+      <div className="App">
+        <header className="app-header">
+          <h1>Project Links</h1>
+        </header>
+        <div className="container">
+          <div className="content">
+            <h1 className="title">Cliffhanger</h1>
+            <p className="subtitle">Book Social Media</p>
+            <p className="author">by Dushyant Singh</p>
+            
+            <div className="links-container">
+              <LinkCard 
+                title="Website"
+                url="https://www.cliffhanger.in"
+                icon={faGlobe}
+              />
+              <LinkCard 
+                title="Android App"
+                url="https://drive.google.com/file/d/1Sq32kk-FeASRwzpmBtGiDAnj_x6KZPGL/view?usp=sharing"
+                icon={faGooglePlay}
+              />
+              <LinkCard 
+                title="Frontend Repository"
+                url="https://github.com/ArtFoliers/barter-frontend"
+                icon={faGithub}
+              />
+              <LinkCard 
+                title="Backend Repository"
+                url="https://github.com/ArtFoliers/Barter-backend"
+                icon={faGithub}
+              />
+            </div>
           </div>
         </div>
+        <Routes>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
