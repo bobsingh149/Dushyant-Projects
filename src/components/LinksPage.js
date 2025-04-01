@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe, faArrowRight, faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe, faArrowRight, faCode, faLaptopCode, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
 function LinksPage() {
   const launchUrl = (url) => {
@@ -42,6 +42,12 @@ function LinksPage() {
       <div className="content">
         <h1 className="page-title cyan-title">Personal Projects</h1>
         <p className="page-subtitle">A showcase of my work and contributions</p>
+        
+        <div className="github-profile-link" onClick={() => launchUrl("https://github.com/bobsingh149")}>
+          <FontAwesomeIcon icon={faGithub} className="github-icon" />
+          <span>View all projects on GitHub</span>
+          <FontAwesomeIcon icon={faArrowRight} className="link-arrow" />
+        </div>
         
         <div className="projects-container">
           <Section title="CogniShop" theme="cyan">
