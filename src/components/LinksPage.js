@@ -40,7 +40,7 @@ function LinksPage() {
   return (
     <div className="container">
       <div className="content">
-        <h1 className="page-title cyan-title">Personal Projects</h1>
+        <h1 className="page-title cyan-title">Dushyant Singh's Personal Projects</h1>
         <p className="page-subtitle">A showcase of my work and contributions</p>
         
         <div className="github-profile-link" onClick={() => launchUrl("https://github.com/bobsingh149")}>
